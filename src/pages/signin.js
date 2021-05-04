@@ -9,11 +9,13 @@ import * as ROUTES from '../constants/routes';
 export default function SignIn() {
     const history = useHistory();
     const { firebase } = useContext(FirebaseContext);
+
     const [emailAddress, setEmailAddress] = useState('');
     const [password, setPassword] = useState('');
     const [error, setError] = useState('');
 
     const isInvalid = password === '' || emailAddress === '';
+
     const handleSignIn = (event) => {
         event.preventDefault();
 
@@ -39,6 +41,7 @@ export default function SignIn() {
 
                     <Form.Base onSubmit={handleSignIn} method="POST">
                         <Form.Input
+                            type="email"
                             placeholder="Email address"
                             value={emailAddress}
                             onChange={({target}) => setEmailAddress(target.value)}
