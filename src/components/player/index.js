@@ -20,12 +20,13 @@ Player.Video = function PlayerVideo({ src, ...restProps }) {
     return showPlayer ? ReactDOM.createPortal(
         <Overlay {...restProps}
                  onClick={() => setShowPlayer(false)}
+                 data-testid="player"
         >
-            <Inner onClick={(e) => e.stopPropagation()}>
+            <Inner onClick={(e) => e.stopPropagation()} data-testid="player-inner">
                 <video id="netflix-player" controls>
                     <source src={src} type="video/mp4"/>
                 </video>
-                <Close onClick={() => setShowPlayer(false)}/>
+                <Close onClick={() => setShowPlayer(false)} data-testid="player-close"/>
             </Inner>
         </Overlay>,
         document.body

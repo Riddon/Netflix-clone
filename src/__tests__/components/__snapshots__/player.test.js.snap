@@ -1,0 +1,37 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Player /> renders the <Player/> with a bunny video and close clicked on <Close/> 1`] = `
+<div
+  class="player__Container-sc-1c49yiu-0"
+>
+  <button
+    class="player__Button-sc-1c49yiu-4 ePMIUa"
+  >
+    Play
+  </button>
+</div>
+`;
+
+exports[`<Player /> renders the <Player/> with a bunny video and close clicked on <Inner/> 1`] = `
+<div
+  class="player__Container-sc-1c49yiu-0"
+>
+  <button
+    class="player__Button-sc-1c49yiu-4 ePMIUa"
+  >
+    Play
+  </button>
+</div>
+`;
+
+exports[`<Player /> renders the <Player/> with a bunny video and close clicked on <Overlay/> 1`] = `
+<div
+  class="player__Container-sc-1c49yiu-0"
+>
+  <button
+    class="player__Button-sc-1c49yiu-4 ePMIUa"
+  >
+    Play
+  </button>
+</div>
+`;
