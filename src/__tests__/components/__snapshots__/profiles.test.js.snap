@@ -30,36 +30,6 @@ exports[`<Profiles /> renders the <Profiles/> with populated data 1`] = `
 </div>
 `;
 
-exports[`<Profiles /> renders the <Profiles/> with populated data 2`] = `
-<div
-  class="profiles__Container-bxtkkv-0 lfIDZX"
->
-  <h1
-    class="profiles__Title-bxtkkv-1 kjBRZT"
-  >
-    Who\`s watching?
-  </h1>
-  <ul
-    class="profiles__List-bxtkkv-2 livHdo"
-  >
-    <li
-      class="profiles__Item-bxtkkv-5 bsnzsB"
-    >
-      <img
-        class="profiles__Picture-bxtkkv-3 hMyKjx"
-        data-testid="getByTestId"
-        src="/images/users//images/karlitto.png.png"
-      />
-      <p
-        class="profiles__Name-bxtkkv-4 fQlGYa"
-      >
-        Karlitto
-      </p>
-    </li>
-  </ul>
-</div>
-`;
-
 exports[`<Profiles /> renders the <Profiles/> without src 1`] = `
 <div
   class="profiles__Container-bxtkkv-0 lfIDZX"
