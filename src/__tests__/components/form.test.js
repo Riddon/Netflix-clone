@@ -1,7 +1,6 @@
 import React from 'react';
 import { render } from '@testing-library/react';
 import { Form } from "../../components/";
-import { StaticRouter } from 'react-router-dom'
 
 jest.mock('react-router-dom');
 

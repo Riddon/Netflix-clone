@@ -31,6 +31,7 @@ describe('<Accordion />', () => {
         expect(getByText('Where can I watch?')).toBeTruthy();
         expect(getByText('How do I cancel?')).toBeTruthy();
         expect(getByText('What can I watch on Netflix?')).toBeTruthy();
+
         expect(container.firstChild).toMatchSnapshot();
     });
 
