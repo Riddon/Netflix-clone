@@ -20,7 +20,7 @@ import {
 } from "./styles/header";
 
 export default function Header({bg = true, children, ...restProps}) {
-    return bg ? (<Background {...restProps}>{children}</Background>) : (children);
+    return bg ? (<Background {...restProps} data-testid="header-bg">{children}</Background>) : (children);
 }
 
 Header.Profile = function HeaderProfile({ children, ...restProps }) {
