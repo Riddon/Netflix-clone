@@ -56,6 +56,7 @@ export default function SignIn() {
                         />
 
                         <Form.Submit
+                            data-testid="sign-in"
                             disabled={isInvalid}
                             type="submit"
                         >

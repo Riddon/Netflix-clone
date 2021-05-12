@@ -9,7 +9,7 @@ exports[`<Header /> renders the basic <Header/> with a background 1`] = `
     class="header__Container-djltcn-2 ckijbL"
   >
     <a
-      href=""
+      href="/home"
     >
       <img
         alt="Netflix"
@@ -31,7 +31,7 @@ exports[`<Header /> renders the basic <Header/> without a background 1`] = `
   class="header__Container-djltcn-2 ckijbL"
 >
   <a
-    href=""
+    href="/home"
   >
     <img
       alt="Netflix"
@@ -41,7 +41,7 @@ exports[`<Header /> renders the basic <Header/> without a background 1`] = `
   </a>
   <a
     class="header__ButtonLink-djltcn-7 jxhhJx"
-    href=""
+    href="/signin"
   >
     Sign In
   </a>
@@ -66,7 +66,7 @@ exports[`<Header /> renders the full <Header/> with a background 1`] = `
       class="header__Group-djltcn-1 cIqXkZ"
     >
       <a
-        href=""
+        href="/home"
       >
         <img
           alt="Netflix"

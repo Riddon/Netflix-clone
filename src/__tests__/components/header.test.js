@@ -2,8 +2,6 @@ import React from 'react';
 import { render, fireEvent } from '@testing-library/react';
 import { Header } from "../../components/";
 import { MemoryRouter } from 'react-router-dom';
-import * as ROUTES from "../../constants/routes";
-import logo from "../../logo.svg";
 
 describe('<Header />', () => {
     it('renders the basic <Header/> with a background', () => {
@@ -11,7 +9,7 @@ describe('<Header />', () => {
             <MemoryRouter>
                 <Header>
                     <Header.Frame>
-                        <Header.Logo src="/logo.svg" alt="Netflix"/>
+                        <Header.Logo to="/home" src="/logo.svg" alt="Netflix"/>
                         <Header.TextLink active="true">It is a link</Header.TextLink>
                     </Header.Frame>
                 </Header>
@@ -30,8 +28,8 @@ describe('<Header />', () => {
             <MemoryRouter>
                 <Header bg={false}>
                     <Header.Frame>
-                        <Header.Logo src="/logo.svg" alt="Netflix"/>
-                        <Header.ButtonLink>Sign In</Header.ButtonLink>
+                        <Header.Logo to="/home" src="/logo.svg" alt="Netflix"/>
+                        <Header.ButtonLink to="/signin">Sign In</Header.ButtonLink>
                         <Header.TextLink active="true">It is a link</Header.TextLink>
                     </Header.Frame>
                 </Header>
@@ -52,7 +50,7 @@ describe('<Header />', () => {
                 <Header src='joker1' dontShowOnSmallViewPort>
                     <Header.Frame>
                         <Header.Group>
-                            <Header.Logo src='/images/logo.png' alt="Netflix"/>
+                            <Header.Logo to="/home" src='/images/logo.png' alt="Netflix"/>
                             <Header.TextLink
                                 active='false'
                                 onClick={() => {}}

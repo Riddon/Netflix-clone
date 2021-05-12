@@ -8,7 +8,7 @@ import * as ROUTES from '../constants/routes';
 
 export default function SignUp() {
     const history = useHistory();
-    const { firebase } =useContext(FirebaseContext);
+    const { firebase } = useContext(FirebaseContext);
 
     const[firstName, setFirstName] = useState('');
     const[emailAddress, setEmailAddress] = useState('');
@@ -28,8 +28,8 @@ export default function SignUp() {
                     displayName: firstName,
                     photoURL: Math.floor(Math.random() * 5) + 1,
                 }).then(() => {
-                    history.push(ROUTES.BROWSE);
-                });
+                    history.push(ROUTES.BROWSE)
+                })
             })
             .catch((error) => {
                 setFirstName('');
@@ -46,7 +46,7 @@ export default function SignUp() {
                     <Form.Title>
                         Sign Up
                     </Form.Title>
-                    {error && <Form.Error>{error}</Form.Error>}
+                    {error && <Form.Error data-testid="error-field">{error}</Form.Error>}
 
                     <Form.Base onSubmit={handleSignUp} method="POST">
                         <Form.Input
@@ -69,6 +69,7 @@ export default function SignUp() {
                             onChange={({target}) => setPassword(target.value)}
                         />
                         <Form.Submit
+                            data-testid="sign-up"
                             disabled={isInvalid}
                             type="submit"
                         >
